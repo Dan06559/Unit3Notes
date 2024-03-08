@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Title</title>
+  <style>
+    .red{
+      background-color:red;
+    }
+    .green{
+      background-color: green;
+    }
+    .blue{
+      background-color: blue;
+    }
+    .brown{
+      background-color:brown;
+    }
+    .black{
+      background-color: black;
+    }
+    .orange{
+      background-color: orange;
+    }
+    .pink{
+      color: pink;
+    }
+    .teal{
+      color: teal;
+    }
+    .purple{
+      color: purple;
+    }
+    .olive{
+      color: olive;
+    }
+    .aqua{
+      color: aqua;
+    }
+    .beige{
+      color: beige;
+    }
+    .Mando{
+      img src='https://m.economictimes.com/thumb/msid-106234016,width-1600,height-900,resizemode-4,imgsize-297956/is-the-mandalorian-season-4-heading-to-the-big-screen.jpg'
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+      tempor incididunt ut labore et dolore magna aliqua. Lacus luctus
+      accumsan tortor posuere ac ut. Aenean vel elit scelerisque mauris
+      at imperdiet dui accumsan. Tristique et egestas quis ipsum suspend.</p>
+    <div class="row">
+      <h3>Background</h3>
+      <button id="1">Mandolorian</button>
+      <button id="2">Green</button>
+      <button id="3">Blue</button>
+      <button id="7">Brown</button>
+      <button id="8">Black</button>
+      <button id="9">Orange</button>
+    </div>
+
+    <button id="clear">Clear</button>
+  </div>
+</div>
+<script>
+  const  content = document.querySelector('.content');
+  const Mando = document.getElementById('1');
+  const green = document.getElementById('2');
+  const blue = document.getElementById(`3`);
+  const brown = document.getElementById(`7`);
+  const black = document.getElementById(`8`);
+  const orange = document.getElementById(`9`);
+
+  const clearButton = document.getElementById(`clear`)
+
+  Mando.addEventListener(`click`, function (e){
+    removeBGColor();
+    content.classList.add('Mando');
+  });
+
+  green.addEventListener(`click`, function (e){
+    removeBGColor();
+    content.classList.add(`green`);
+  });
+
+  blue.addEventListener(`click`, function (e){
+    removeBGColor();
+    content.classList.add(`blue`);
+  });
+
+  brown.addEventListener(`click`, function (e){
+    removeBGColor();
+    content.classList.add('brown');
+  });
+
+  black.addEventListener(`click`, function (e){
+    removeBGColor();
+    content.classList.add('black');
+  });
+
+  orange.addEventListener(`click`, function (e){
+    removeBGColor();
+    content.classList.add('orange');
+  });
+
+  clearButton.addEventListener(`click`, function (e){
+    removeBGColor();
+  });
+
+  function removeBGColor(){
+    content.classList.remove(`Mando`);
+    content.classList.remove(`green`);
+    content.classList.remove(`blue`);
+    content.classList.remove(`brown`);
+    content.classList.remove(`black`);
+    content.classList.remove(`orange`);
+  }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Charectar Avatar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<img src="https://media1.tenor.com/m/VOdWjm2zbEAAAAAC/gandalf-sax-guy.gif">
+<div class="row">
+    <h3>Different avatar images</h3>
+    <button id="1">Mandolorian</button>
+    <button id="2">spiderman</button>
+    <button id="3">Batman</button>
+    <button id="4">Dragon</button>
+    <button id="5">Space image</button>
+    <button id="6">Earth Image</button>
+    <button id="7">Dancing gandalf</button>
+</div>
+<script>
+    const picture = document.querySelector('img')
+    const button1 = document.getElementById('1');
+
+    button1.addEventListener('click', function(){
+        picture.src = 'https://cdn1.edgedatg.com/aws/v2/abc/DisneyPlusMisc/blog/3554962/a59f02b80886d812c14c8fcc11f6342d/512x288-Q90_a59f02b80886d812c14c8fcc11f6342d.jpg'
+    })
+
+    const button2 = document.getElementById('2');
+
+    button2.addEventListener('click', function(){
+        picture.src = 'https://ew.com/thmb/eDwL9m9o2zMok8kHJdNyzSN9e0w=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/spider-man-civil-war_0-049415dd5079404a9c74ef008a60ae97.jpg'
+    })
+
+    const button3 = document.getElementById('3');
+
+    button3.addEventListener('click', function(){
+        picture.src = 'https://myhero.com/images/guest/g291295/hero112862/Batman-4.jpg'
+    })
+
+    const button4 = document.getElementById('4');
+
+    button4.addEventListener('click', function(){
+        picture.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQazw5614ZTI37tDsO_fcpyYsh4xiR7z1sGjg&usqp=CAU'
+    })
+
+    const button5 = document.getElementById('5');
+
+    button5.addEventListener('click', function(){
+        picture.src = 'https://img.freepik.com/free-photo/glowing-spaceship-orbits-planet-starry-galaxy-generated-by-ai_188544-9655.jpg?size=626&ext=jpg&ga=GA1.1.1395880969.1709769600&semt=sph'
+    })
+
+    const button6 = document.getElementById('6');
+
+    button6.addEventListener('click', function(){
+        picture.src = 'https://www.shutterstock.com/image-photo/blue-earth-space-view-planet-260nw-1613970349.jpg'
+    })
+
+
+    const button7 = document.getElementById('7');
+
+    button7.addEventListener('click', function(){
+        picture.src = 'https://media1.tenor.com/m/VOdWjm2zbEAAAAAC/gandalf-sax-guy.gif'
+    })
+</script>
+</body>
+</html>
